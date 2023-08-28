@@ -1,0 +1,297 @@
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(43, 127, 127);
+    box-shadow: 0 5px 15px rgb(0, 0, .6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 80px;
+    border-radius: 10%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:780px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 80vh;
+        width: 300px;
+        background-color: #68abb7;
+        box-shadow: 0 40px 60px rgba(0,0,0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.6;
+    }
+    #navbar.active{
+        position: fixed;
+        right: -10px;
+    }
+
+    #bar{
+        padding: 10px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+}
+    
+
+#navbar li{
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: brown;
+    transition: 0.4s ease;
+ }
+#navbar li a:hover,
+#navbar li a.active{
+    color: black;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content:"";
+    width:30% ;
+    height:2px ;
+    background-color: black;
+    position: absolute;
+    bottom:-4px ;
+    left:20px ;
+}
+#main{
+    background-image: url(https://media.istockphoto.com/id/1170301067/photo/just-waiting-for-your-words.jpg?s=612x612&w=0&k=20&c=Ig_Mgx797WSBropWpYeVvtpqHl4_FQIpTJWb26vccOc=);
+    background-size: 100%;
+    background-position: auto;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 5%;
+   
+}
+#main h4{
+    position: absolute;
+    left: 40px;
+    top: 300px;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#main h1{
+    position: absolute;
+    left: 30px;
+    top: 400px;
+    font-size: 50px;
+} 
+#main h2{
+    position: absolute;
+    left: 40px;
+    top: 460px;
+    font-size: 55px;
+    color: darkslateblue;
+}
+#main p{
+    position: absolute;
+    left: 40px;
+    top: 560px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#main button{
+    position: absolute;
+    left: 40px;
+    top: 640px;
+    background-image: url(https://i.pngimg.me/thumb/f/720/compngwingbwgxc.jpg);
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+    transform: 0.4s ease;
+    font-size: 30px;
+}
+#main button:hover{
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+#features{
+    width: 100%;
+}
+#freeshopping img{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+}
+#freeshopping h2{
+    font-size: 20px;
+}
+#freeshopping h2:hover{
+    color: darkgreen;
+    font-family: cursive;
+    background-color: burlywood;
+}
+#freeshopping{
+    padding: 30px;
+    padding-left: 90px;
+    display: inline-block;
+    
+}
+#product1{
+    text-align: center;
+    width: 100%;
+   
+}
+#product1 .h2{
+    font-size: 50px;
+    color: rgb(119, 170, 68);
+    font-family: fantasy;
+}
+#product1 p{
+    font-size: larger;
+    position: relative;
+    top: -15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ #product1 .pro{
+   width: 150px;
+   min-width: fit-content;
+    padding: 10px 12px;
+    border: 1px solid rgb(233, 212, 132);
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 5px;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0 ,0.02);
+    height: 320px;
+    background-color: rgb(137, 194, 229);
+   
+ }
+ #product1 .pro img{
+    border-radius: 20px;
+    width: 200px;
+    height: 150px;
+
+ }
+ #str{
+    color: rgb(220, 162, 13);
+ }
+ #product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+ }
+ #banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/599/208/original/geometry-background-colorful-shape-pattern-vivid-coloring-texture-and-abstract-funky-color-pattern-geometry-poster-wallpaper-background-free-vector.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+ }
+ #banner h4{
+    color: bisque;
+    font-size: 30px;
+    position: relative;
+    top: -40px;
+ }
+#banner h2{
+    color: rgb(205, 167, 122);
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+}
+#banner h2 span{
+    color: rgb(167, 97, 97);
+}
+#banner button{
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    background-color: bisque;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top: -50px;
+}
+#banner button:hover{
+    background-color: rgb(181, 150, 210);
+    font-size: 36px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(https://w0.peakpx.com/wallpaper/1000/53/HD-wallpaper-blury-background-blur-abstract-background-simple-background.jpg);
+    background-size: cover;   
+}
+#newsletter h4{
+    color: rgb(251, 210, 160);
+    font-size: 40px;
+    padding-left: 10px;
+    font-family: fantasy;
+}
+#newsletter p{
+    color: rgb(249, 211, 163);
+    font-size: 30px;
+    padding-left: 10px;
+}
+#newsletter .form input{
+    border: none;
+    font-size: 30px;
+    padding-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#newsletter .form button{
+    font-size: 30px;
+    border: none;
+    background-color: rgb(230, 180, 119);
+    margin-right: 20px;
+}
+#newsletter .form button:hover{
+    font-family: 'Times New Roman', Times, serif;
+}
+.foot{
+    padding-top: 10px;
+}
+.foot .col{
+    padding-left: 15px;
+}
+.foot .col .icon{
+    font-size: 40px;
+}
+
+/*shop page*/
+#page-header{
+    background-image: url(https://wallpaperset.com/w/full/3/5/5/28726.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
